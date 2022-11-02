@@ -4,7 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
 
+   android:layout_margin="30dp" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="99dp"
+        android:src="@drawable/channel_amii_logo_02"
+        android:layout_gravity="center"
+        android:scaleX="4.5"
+        android:scaleY="4.5"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="#FF5A0F46"
+        android:textSize="20pt"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:gravity="left"
+            android:text="ID"
+            android:textColor="#7e1c73"
+            android:textSize="12pt" />
+
+
+        <EditText
+
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="6dp"
+            android:hint="email addres"
+            android:inputType="textEmailAddress"
+            android:textColor="#7e1c73"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#FF5A0F46"
+            android:text="Check"
+            android:textSize="6pt">
+
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="12pt"
+        android:textColor="#FF5A0F46"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter more than 8 characters"
+        android:inputType="textPassword"
+        android:textColorHint="#808080"
+        android:layout_marginTop="-5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF5A0F46"
+        android:text="Confirm Password"
+        android:textSize="12pt"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password again"
+        android:inputType="textPassword"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"
+        android:layout_marginTop="-5dp"/>
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="이용약관 동의"
+    android:textColor="#FF5A0F46"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#5A0F46"
+        android:text="SUBMIT">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:backgroundTint="#FF5A0F46"
+            android:text="Sign In"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="13dp"
+            android:backgroundTint="#FF5A0F46"
+            android:text="Need to help"
+            ></Button>
+
+    </LinearLayout>
 
 </LinearLayout>
